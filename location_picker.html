@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        #map{ width:700px; height: 500px; }
+    </style>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <title>Get distance</title>
+</head>
+<body>
+<h1>Select a location!</h1>
+<p>Click on a location on the map to select it. Drag the marker to change location.</p>
+
+<div id="map"></div>
+<h2>Current Location</h2>
+<form method="post">
+    <input type="text" id="latCurrent" readonly="yes"><br>
+    <input type="text" id="lngCurrent" readonly="yes">
+</form>
+<h2>Chosen Location</h2>
+<form method="post">
+    <input type="text" id="latChosen" readonly="yes"><br>
+    <input type="text" id="lngChosen" readonly="yes">
+</form>
+<h2>Distance</h2>
+<form method="post">
+    Distance :
+    <input type="text" id="distance" readonly="yes">
+</form>
+</body>
+</html>
